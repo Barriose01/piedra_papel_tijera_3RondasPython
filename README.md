@@ -17,7 +17,8 @@ En el caso de que ambos eligieron la misma opcion (como muestra el ejemplo), nad
 
 Dependiendo del resultado, el que logre ganar una partida, recibira un punto.
 
-![image](https://user-images.githubusercontent.com/107152796/173126645-77e76e58-2775-4852-b2de-a397e741d053.png)
+![image](https://user-images.githubusercontent.com/107152796/173126854-099356fc-a35e-49b2-8d1b-ae0d908b454b.png)
+
 
 Al finalizar la tercera ronda, se suman los puntajes. El que tenga mas puntos, gana.
 Se le da la opcion al usuario de comenzar un nuevo juego o de salir del programa
