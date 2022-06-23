@@ -149,15 +149,23 @@ def resultados():
 		print("\nPerdiste")
 
 	#SE LE DA LA OPCION AL JUGADOR DE SEGUIR JUGANDO O ABANDONAR:
-	opcion = input("\n¿Desea volver a jugar? (y/n)")
-	if opcion == "y":
+def salir():
+	salida = 0
+	while True:
+		opcion = input("\n¿Desea volver a jugar? (y/n)")
+		if opcion.lower().strip() != "y" and opcion.lower().strip() != "n":
+			print("Ingrese una opcion valida")
+			continue
+		elif opcion.lower().strip() == "y":
+			puntuacion.clear()
+			python_puntos.clear()
+			mi_jugada()
+			resultados()
+		elif opcion.lower().strip() == "n":
+			break
+
+	
 		
-		puntuacion.clear()
-		python_puntos.clear()
-		mi_jugada()		
-		resultados()
-		
-				
 #SE CREA LA LISTA DE PUNTOS DEL USUARIO:
 puntuacion = []
 
@@ -167,3 +175,5 @@ python_puntos = []
 #SE LLAMAN A LAS FUNCIONES PARA PODER EJECUTAR EL PROGRAMA:
 mi_jugada()
 resultados()
+salir()
+
